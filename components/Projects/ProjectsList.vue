@@ -8,7 +8,8 @@ const { data } = useProjectsQuery()
 <template>
 	<div class='md:col-span-12 col-span-4 flex flex-col md:gap-28 gap-16'>
 		<UiCard class='my-grid' v-for='card in data'>
-			<div class='md:col-span-6 col-span-4 flex items-center justify-center py-16 px-9 bg-secondary rounded-[0.75rem]'>
+			<div
+				class='md:col-span-6 col-span-4 flex items-center justify-center md:py-16 md:px-9 px-6 py-9 bg-secondary rounded-[0.75rem]'>
 				<NuxtImg class='w-full rounded-[0.75rem]' alt='' :src='card.imageUrl' />
 			</div>
 			<div class='md:col-span-6 col-span-4 lg:py-24 md:py-16 py-10 md:pl-7'>
